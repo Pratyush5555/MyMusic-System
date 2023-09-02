@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Josefin+Sans&display=swap');
+body{
+    background-color: rgb(79, 165, 179);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Domine', serif;*/
+} 
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 90px;
+    background-color: black;
+    color: rgb(240, 245, 242);
+}
+nav ul li{
+    padding: 0 8px;
+    cursor: pointer;
+}
+.brand img{
+    width: 90px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 75vh;
+    background-color: black;
+    color: white;
+    font-family: 'Domine', serif;
+    display: flex;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    margin: 23px auto;
+    background-image: url('background.jpg');
+}
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: rgb(2, 3, 1);
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 10px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 34px;
+}
+.songItem{
+    height: 40px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+.songItem img{
+  width: 60px; 
+  margin: 0 15px; 
+  border-radius: 60px;
+}
+.timestamp{
+    margin: 0 7px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 5vw;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
